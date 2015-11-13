@@ -57,7 +57,7 @@ disabled_hitch() {
 
 stop_hitch() {
     echo "Stopping $DESC" "$NAME"
-    if killproc --p $PIDFILE $DAEMON; then
+    if killproc -p $PIDFILE $DAEMON; then
         return 0
     else
         return 1
@@ -65,7 +65,7 @@ stop_hitch() {
 }
 
 status_hitch() {
-    status_of_proc -p "${PIDFILE}" "${DAEMON}" "${NAME}"
+    status -p "${PIDFILE}" "${DAEMON}" "${NAME}"
     exit $?
 }
 
