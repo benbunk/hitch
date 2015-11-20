@@ -5,6 +5,6 @@
 #
 # See hitch(1) for an overview of valid settings.
 
-CONFIG_FILE="/etc/sysconfig/hitch"
+HITCH=""
 
-DAEMON_OPTS="--config=${CONFIG_FILE}"
+DAEMON_OPTS="--config=${CONF}"
