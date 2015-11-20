@@ -61,8 +61,8 @@ sudo service hitch reload
 #cat www.example.com.cert www.example.com.key > www.example.pem
 
 #sudo /usr/local/sbin/hitch --backend=[127.0.0.1]:80 \
-    --frontend=[*]:8443 \
-    --sni-nomatch-abort \
-    --daemon \
-    --syslog \
-    /export/home/r24042/www.example.pem
+#    --frontend=[*]:8443 \
+#    --sni-nomatch-abort \
+#    --daemon \
+#    --syslog \
+#    /export/home/r24042/www.example.pem

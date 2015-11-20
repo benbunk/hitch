@@ -5,7 +5,6 @@
 #
 # See hitch(1) for an overview of valid settings.
 
-DAEMON_OPTS=""
+CONFIG_FILE="/etc/sysconfig/hitch"
 
-# an example of vac callback
-# DAEMON_OPTS="-z http://vac_server/api/rest/register"
+DAEMON_OPTS="--config=${CONFIG_FILE}"

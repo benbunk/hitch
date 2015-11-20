@@ -34,7 +34,7 @@ export PATH="${PATH:+$PATH:}/usr/sbin:/usr/bin:/sbin:/bin"
 start_hitch() {
     echo  "Starting $DESC" "$NAME"
     if [ ! -z "$USER" ] ; then
-        HITCH_OPTIONS="${HITCH_OPTIONS} --user ${USER}"
+        HITCH_OPTIONS="${DAEMON_OPTS} --user ${USER}"
     fi
     #output=$(/bin/tempfile -s.hitch)
     mkdir -p `dirname $PIDFILE`
